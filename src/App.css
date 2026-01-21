@@ -1,0 +1,63 @@
+.success-popup {
+  background: #ecfdf5;
+  border: 1px solid #10b981;
+  color: #065f46;
+  padding: 14px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.error-popup {
+  background: #fef2f2;
+  border: 1px solid #ef4444;
+  color: #7f1d1d;
+  padding: 14px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+
+.form-submit-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 36px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+.modal-icon {
+  color: #10b981;
+  margin-bottom: 12px;
+}
+
+.modal-btn {
+  margin-top: 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}

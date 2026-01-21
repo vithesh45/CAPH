@@ -1,0 +1,224 @@
+/* service-card */
+
+.service-card-component {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-card-component:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 102, 204, 0.15);
+  border-color: var(--primary-blue);
+}
+
+.service-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(51, 153, 255, 0.1) 100%);
+  color: var(--primary-blue);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.service-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.service-card-description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.service-card-link {
+  color: var(--primary-blue);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: gap 0.3s ease;
+}
+
+
+
+
+/* servicedetail-layout */
+
+.error-container {
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.service-detail-layout {
+  min-height: 100vh;
+}
+
+.service-detail-hero-section {
+  padding: 8rem 0 5rem;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
+  text-align: center;
+}
+
+.service-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-detail-hero-section .btn-primary {
+  background: white;
+  color: var(--primary-blue);
+  border-color: white;
+}
+
+.service-detail-hero-section .btn-primary:hover {
+  background: var(--light-bg);
+}
+
+.service-layout-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.layout-section {
+  margin-bottom: 4rem;
+}
+
+.layout-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.layout-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.layout-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.layout-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.layout-list-icon {
+  color: var(--accent-green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.layout-value-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.layout-value-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.layout-value-icon {
+  color: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+.layout-value-card p {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.layout-ideal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.layout-ideal-card {
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(51, 153, 255, 0.05) 100%);
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.0625rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+}
+
+.layout-cta {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.layout-cta h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.layout-cta p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.layout-cta .btn-primary {
+  background: white;
+  color: var(--primary-blue);
+  border-color: white;
+}
+
+.layout-cta .btn-primary:hover {
+  background: var(--light-bg);
+}
+
+@media (max-width: 768px) {
+  .service-hero-title {
+    font-size: 2rem;
+  }
+
+  .layout-value-grid,
+  .layout-ideal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+

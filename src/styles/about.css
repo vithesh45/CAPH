@@ -1,0 +1,354 @@
+/* aboutComponent */
+.company-intro {
+  padding: 8rem 0 5rem;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(51, 153, 255, 0.03) 100%);
+}
+
+.intro-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.intro-text-large {
+  font-size: 1.375rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.section-title-center {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+}
+
+.meanings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.meaning-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.meaning-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 102, 204, 0.12);
+  border-color: var(--primary-blue);
+}
+
+.meaning-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  color: white;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.meaning-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.meaning-description {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mvv-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.mvv-card:hover {
+  box-shadow: 0 15px 35px rgba(0, 102, 204, 0.1);
+  border-color: var(--primary-blue);
+}
+
+.mvv-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.mvv-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.mvv-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.values-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.values-list li {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  padding-left: 2rem;
+  position: relative;
+}
+
+.values-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+  .meanings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mvv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .company-intro {
+    padding: 6rem 0 4rem;
+  }
+}
+
+
+
+
+
+/* .company-intro */
+
+.company-intro {
+  padding: 8rem 0 5rem;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(51, 153, 255, 0.03) 100%);
+}
+
+.intro-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.intro-text-large {
+  font-size: 1.375rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .company-intro {
+    padding: 6rem 0 4rem;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
+
+/* brand explanation */
+
+.brand-section {
+  background: var(--light-bg);
+  padding: 5rem 0;
+}
+
+.section-title-center {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+}
+
+.meanings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.meaning-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.meaning-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 102, 204, 0.12);
+  border-color: var(--primary-blue);
+}
+
+.meaning-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  color: white;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.meaning-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.meaning-description {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .meanings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* mvv secelction  */
+.mvv-section {
+  background: white;
+  padding: 5rem 0;
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mvv-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.mvv-card:hover {
+  box-shadow: 0 15px 35px rgba(0, 102, 204, 0.1);
+  border-color: var(--primary-blue);
+}
+
+.mvv-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.mvv-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.mvv-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.values-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.values-list li {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  padding-left: 2rem;
+  position: relative;
+}
+
+.values-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+  .mvv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-list {
+    grid-template-columns: 1fr;
+  }
+}

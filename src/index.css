@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-blue: #2C5282;
+  --primary-dark: #1A365D;
+  --secondary-blue: #4299E1;
+  --accent-green: #38B2AC;
+  --dark-bg: #1A202C;
+  --light-bg: #F7FAFC;
+  --text-primary: #2D3748;
+  --text-secondary: #4A5568;
+  --border-color: #E2E8F0;
+  --white: #FFFFFF;
+}
+
+/* BODY */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.875rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-light {
+  background-color: var(--white);
+}
+
+.section-dark {
+  background-color: var(--light-bg);
+}
+
+
+/* HERO - Home page only */
+.hero {
+  background:
+    /* linear-gradient(135deg, rgba(44,82,130,0.95), rgba(26,54,93,0.97)), */
+    url('/hero.jpg');
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed;
+}
+
+/* ABOUT / PARTNERSHIP / SERVICES PAGE HEROES */
+.company-intro {
+  background:
+    linear-gradient(to bottom, rgba(247,250,252,0.97), rgba(255,255,255,0.95)),
+    url('/careers.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.services-hero {
+  background:
+    linear-gradient(to bottom, rgba(247,250,252,0.97), rgba(255,255,255,0.95)),
+    url('/serivces.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.page-hero {
+  background:
+    linear-gradient(to bottom, rgba(247,250,252,0.97), rgba(255,255,255,0.95)),
+    url('') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* CTA BAND - Bottom of pages */
+.cta-band {
+  background:
+    linear-gradient(135deg, var(--primary-blue), var(--primary-dark)),
+    url('/layout-cta.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay;
+}
+
+/* SERVICE DETAIL HERO */
+.service-detail-hero-section {
+  background:
+    linear-gradient(135deg, var(--primary-blue), var(--primary-dark)),
+    url('/service-detail.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay;
+}
+
+/* BRAND SECTION - About page middle section */
+.brand-section {
+  background:
+    /* var(--light-bg), */
+    url('/brand-selection.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: lighten;
+}
+
+/* CAREERS CTA BOX */
+.careers-cta-box {
+  background:
+    linear-gradient(135deg, var(--primary-blue), var(--primary-dark)),
+    url('/careers.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay;
+}
+
+/* LAYOUT CTA (Service detail page) */
+.layout-cta,
+.detail-cta {
+  background:
+    linear-gradient(135deg, var(--primary-blue), var(--primary-dark)),
+    url('/layout-cta.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay;
+}
+
+/* ==========================================
+   TEXT COLOR FIXES - WHITE ON DARK BG
+   ========================================== */
+
+/* Hero sections */
+.hero-title,
+.hero-subtitle {
+  color: var(--white) !important;
+}
+
+/* CTA sections */
+.cta-title,
+.cta-subtitle {
+  color: var(--white) !important;
+}
+
+/* Service detail hero */
+.service-hero-title,
+.service-detail-hero-section h1,
+.service-detail-hero-section p {
+  color: var(--white) !important;
+}
+
+/* Careers CTA box */
+.careers-cta-box h2,
+.careers-cta-box p {
+  color: var(--white) !important;
+}
+
+/* Layout CTA */
+.layout-cta h2,
+.layout-cta p,
+.detail-cta h2,
+.detail-cta p {
+  color: var(--white) !important;
+}
+
+
+
+/* White buttons on dark backgrounds */
+.cta-band .btn-primary,
+.service-detail-hero-section .btn-primary,
+.layout-cta .btn-primary,
+.detail-cta .btn-primary,
+.careers-cta-box .btn-primary {
+  background: var(--white) !important;
+  color: var(--primary-blue) !important;
+  border-color: var(--white) !important;
+}
+
+.cta-band .btn-primary:hover,
+.service-detail-hero-section .btn-primary:hover,
+.layout-cta .btn-primary:hover,
+.detail-cta .btn-primary:hover,
+.careers-cta-box .btn-primary:hover {
+  background: var(--light-bg) !important;
+  border-color: var(--light-bg) !important;
+  color: var(--primary-blue) !important;
+}
+
+/* Hero secondary button - white outline */
+.hero .btn-secondary {
+  background: transparent;
+  color: var(--white) !important;
+  border: 2px solid var(--white);
+}
+
+.hero .btn-secondary:hover {
+  background: var(--white);
+  color: var(--primary-blue) !important;
+}
+
+/* ==========================================
+   FOOTER TEXT - LIGHT ON DARK
+   ========================================== */
+
+.footer-logo,
+.footer-heading {
+  color: var(--white) !important;
+}
+
+.footer-description,
+.footer-links a,
+.footer-contact a,
+.footer-bottom {
+  color: #A0AEC0 !important;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover,
+.footer-legal a:hover {
+  color: var(--secondary-blue) !important;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  /* Remove fixed background on mobile for performance */
+  .hero {
+    background-attachment: scroll;
+  }
+}
