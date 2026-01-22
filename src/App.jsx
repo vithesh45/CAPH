@@ -6,11 +6,13 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 
-import {Careers} from './pages/Careers';
+import { Careers } from './pages/Careers';
 import { Contact } from './pages/Contact';
 import { PartnershipModel } from './pages/PartnerShipModel';
 import ServiceDetail from './pages/ServiceDetail';
 import ScrollToTop from './components/common/ScrollToTop';
+import { Privacy } from './pages/Privacy';
+import { Terms } from './pages/Terms';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
             <Route path="/partnership-model" element={<PartnershipModel />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
           </Routes>
         </main>
         <Footer />

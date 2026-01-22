@@ -30,7 +30,7 @@ const Footer = () => {
             <ul className="footer-links">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/partnership">Partnership Model</Link></li>
+              <li><Link to="/partnership-model">Partnership Model</Link></li>
               <li><Link to="/careers">Careers</Link></li>
             </ul>
           </div>
@@ -61,12 +61,22 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} CAPH All rights reserved.</p>
+          <p>&copy; {currentYear} CAPH. All rights reserved.</p>
+
           <div className="footer-legal">
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>
           </div>
         </div>
+       <a
+            href="https://www.elvatech.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-credit"
+          >
+            <span>Designed & Developed by Elva Tech</span>
+            <img src="/Elva.svg" alt="Elva Tech" />
+          </a>
       </div>
     </footer>
   );
